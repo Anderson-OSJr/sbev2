@@ -4,7 +4,7 @@ import Image from "next/image";
 import { IoMenu } from "react-icons/io5";
 import Menu from "./Menu";
 import { useState } from "react";
-import { DiVim } from "react-icons/di";
+import MobileMenu from "./MobileMenu";
 
 const MainNav = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
@@ -35,7 +35,14 @@ const MainNav = () => {
         </button>
         <Menu />
       </div>
-      {isMenuActive && <div>Teste</div>}
+      <div className="absolute top-50 right-2">
+        {/* Mobile Menu */}
+        {isMenuActive && (
+          <div className="md:hidden">
+            <MobileMenu />
+          </div>
+        )}
+      </div>
     </section>
   );
 };

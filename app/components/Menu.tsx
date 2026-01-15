@@ -1,16 +1,9 @@
-const Menu = () => {
-  const menuItem = [
-    { index: 1, item: "Sobre", href: "#about" },
-    { index: 2, item: "História", href: "#history" },
-    { index: 3, item: "Notícias", href: "#news" },
-    { index: 4, item: "Calendário", href: "#calendar" },
-    { index: 5, item: "Filiação", href: "#membership" },
-    { index: 6, item: "Links", href: "#links" },
-  ];
+import menuItems from "./menuItems";
 
+const Menu = () => {
   return (
     <div className="hidden md:flex flex-col lg:flex-row mr-6 p-3">
-      {menuItem.map((item) => (
+      {menuItems.map((item) => (
         <a
           key={item.index}
           href={item.href}
