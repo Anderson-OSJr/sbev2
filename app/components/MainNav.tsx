@@ -14,7 +14,7 @@ const MainNav = () => {
   };
 
   return (
-    <section id="mainNav" className="fixed top-0 left-0 right-0">
+    <section id="mainNav" className="fixed top-0 left-0 right-0 z-50">
       <div className="mx-auto h-40 max-w-5xl bg-blue-950 flex items-center justify-between px-4 sm:px-8 md:px-10 bg-[url(/balao14.jpg)] bg-contain bg-center bg-no-repeat bg-blend-multiply shadow-md shadow-blue-300">
         <div className="flex gap-4 sm:gap-6 md:gap-8 items-center">
           <div className="#">
