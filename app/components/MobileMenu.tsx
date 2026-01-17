@@ -1,4 +1,4 @@
-import menuItems from "./menuItems";
+import menuItems from "../data/menuItems";
 
 const MobileMenu = () => {
   return (

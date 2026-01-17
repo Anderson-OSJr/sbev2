@@ -9,9 +9,13 @@ import MobileMenu from "./MobileMenu";
 const MainNav = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
 
+  const activateMenu = () => {
+    setIsMenuActive((previous) => !previous);
+  };
+
   return (
     <section id="mainNav" className="fixed top-0 left-0 right-0">
-      <div className="mx-auto h-40 max-w-5xl bg-blue-950 flex items-center justify-between px-4 sm:px-8 md:px-10 bg-[url(/balao14.jpg)] bg-contain bg-center bg-no-repeat bg-blend-multiply">
+      <div className="mx-auto h-40 max-w-5xl bg-blue-950 flex items-center justify-between px-4 sm:px-8 md:px-10 bg-[url(/balao14.jpg)] bg-contain bg-center bg-no-repeat bg-blend-multiply shadow-md shadow-blue-300">
         <div className="flex gap-4 sm:gap-6 md:gap-8 items-center">
           <div className="#">
             <Image
@@ -29,7 +33,7 @@ const MainNav = () => {
         </div>
         <button
           className="text-blue-100 hover:cursor-pointer hover:text-blue-50 hover:scale-125 md:hidden"
-          onClick={() => setIsMenuActive(!isMenuActive)}
+          onClick={activateMenu}
         >
           <IoMenu size={35} />
         </button>
@@ -46,4 +50,5 @@ const MainNav = () => {
     </section>
   );
 };
+
 export default MainNav;

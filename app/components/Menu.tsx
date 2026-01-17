@@ -1,13 +1,13 @@
-import menuItems from "./menuItems";
+import menuItems from "../data/menuItems";
 
 const Menu = () => {
   return (
-    <div className="hidden md:flex flex-col lg:flex-row mr-6 p-3">
+    <div className="hidden md:flex lg:flex-row p-2">
       {menuItems.map((item) => (
         <a
           key={item.index}
           href={item.href}
-          className="text-blue-900 md:text-blue-300 ml-3 hover:text-blue-200 hover:border-b hover:border-blue-50 w-fit 2xl:text-lg hover:-translate-y-1 hover:scale-110"
+          className="md:text-blue-300 ml-3 hover:text-blue-200 w-fit hover:border-b hover:border-blue-50 text-sm 2xl:text-base hover:-translate-y-1 hover:scale-110"
         >
           {item.item}
         </a>

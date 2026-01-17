@@ -1,3 +1,4 @@
+import About from "./components/About";
 import MainNav from "./components/MainNav";
 
 export default function Home() {
@@ -6,7 +7,9 @@ export default function Home() {
       <header>
         <MainNav />
       </header>
-      <main></main>
+      <main>
+        <About />
+      </main>
       <footer></footer>
     </>
   );
