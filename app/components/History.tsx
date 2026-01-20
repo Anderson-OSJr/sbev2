@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const History = () => {
   return (
-    <section id="history" className="flex flex-col items-center mt-10 pt-40">
+    <section id="history" className="flex flex-col items-center pt-52">
       <div className="flex flex-col md:flex-row container max-w-5xl justify-between gap-8 items-center relative">
         <div className="px-4 items-start max-w-3xl">
           <h1 className="mt-4 text-4xl font-bold text-amber-500 text-shadow-sm text-shadow-amber-950 ">
@@ -73,8 +73,8 @@ const History = () => {
           />
 
           <div className="text-blue-900 text-center mt-2">
-            <h2 className="text-2xl">Eduardo Alves Menine, Prova 28</h2>
-            <h3 className="text-xl">Presidente Fundador da SBEV</h3>
+            <h2 className="text-base">Eduardo Alves Menine, Prova 28</h2>
+            <h3 className="text-sm">Presidente Fundador da SBEV</h3>
           </div>
         </div>
       </div>
